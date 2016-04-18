@@ -26,7 +26,7 @@ $urlToEncode=base_url().'key/'.$key;
 generateQRwithGoogle($urlToEncode);
 function generateQRwithGoogle($url,$widhtHeight ='300',$EC_level='L',$margin='0') {
     $url = urlencode($url);
-    echo '<img src="//chart.apis.google.com/chart?chs='.$widhtHeight.
+    echo '<img src="http://chart.apis.google.com/chart?chs='.$widhtHeight.
 'x'.$widhtHeight.'&cht=qr&chld='.$EC_level.'|'.$margin.
 '&chl='.$url.'" alt="QR code" widhtHeight="'.$widhtHeight.
 '" widhtHeight="'.$widhtHeight.'"/>';
