@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get ('/',                    'QrController@getIndex');
+Route::get ('key/{key}',            'QrController@getKey');
+Route::post('check_key',            'QrController@postCheckKey');
+Route::get ('create_user/{key}',    'QrController@getCreateUser');
+Route::post('save_user',            'QrController@postSaveUser');
+Route::get ('logged_in/{key}',      'QrController@getLoggedIn');
