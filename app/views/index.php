@@ -18,7 +18,7 @@ a:hover {
 <h3>Scan this QR code with your phone to log in.</h3><br>
 <?
 function base_url() {
-    return 'https://sandbox.self.li/qr-login/';
+    return 'https://qr-login.self.li/';
 }
 
 
